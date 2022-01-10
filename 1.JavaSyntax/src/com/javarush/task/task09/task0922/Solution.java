@@ -17,6 +17,7 @@ public class Solution {
         String input = reader.readLine();
         SimpleDateFormat indate= new SimpleDateFormat("yyyy-MM-dd");
 // строка парсируется в дату по шаблону симпл дате формат.
+// Шаблон должен повторять формат даты в строке
 
         Date in= indate.parse(input);
         SimpleDateFormat outdate = new SimpleDateFormat("MMM dd, yyyy",Locale.ENGLISH);

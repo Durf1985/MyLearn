@@ -11,10 +11,12 @@ public class Solution {
     public static Grandmother grandmother = new Grandmother();
     public static Patty patty = new Patty();
     public static Woodman woodman = new Woodman();
-    public static Wolf wolf = new Wolf();
+    public static Wolf wolf = new Wolf(); // статическая переменная, статического вложенного класса.
 
     public static void main(String[] args) {
         wolf.ate.add(grandmother);
+        //каждый персонаж записывает в собственный список то что он сделал.
+
         wolf.ate.add(hood);
         woodman.killed.add(wolf);
     }
@@ -40,7 +42,8 @@ public class Solution {
     }
 
     public static abstract class StoryItem {
-        public ArrayList<StoryItem> killed = new ArrayList<StoryItem>();
-        public ArrayList<StoryItem> ate = new ArrayList<StoryItem>();
+        public ArrayList<StoryItem> killed = new ArrayList<>();
+        // абстрактный класс содержит поля с объектами сосбственного класса.
+        public ArrayList<StoryItem> ate = new ArrayList<>();
     }
 }

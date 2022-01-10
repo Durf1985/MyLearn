@@ -21,9 +21,9 @@ public class Solution {
         ArrayList<Character> Vowel = new ArrayList<>();
         ArrayList<Character> noVowel = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
-            if (isVowel(list.get(i))){
+            if (isVowel(list.get(i))) {
                 Vowel.add(list.get(i));
-            }else {
+            } else {
                 noVowel.add(list.get(i));
             }
         }
@@ -34,8 +34,6 @@ public class Solution {
         for (char out : noVowel) {
             System.out.print(out + " ");
         }
-
-
     }
 
 

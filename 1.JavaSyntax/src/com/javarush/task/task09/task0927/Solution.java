@@ -36,7 +36,7 @@ public class Solution {
 
     public static void printCatSet(Set<Cat> set) {
         for (Cat cat : set) {
-            System.out.println(cat);
+            System.out.println(cat); //неявно вызывается toString
         }
     }
 

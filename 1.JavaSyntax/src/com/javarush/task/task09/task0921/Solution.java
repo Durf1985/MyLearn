@@ -27,6 +27,12 @@ public class Solution {
             for (int out : list) {
                 System.out.println(out);
             }
+        } finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
