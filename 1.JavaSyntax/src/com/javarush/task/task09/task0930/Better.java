@@ -19,7 +19,8 @@ public class Better {
 //        String[] array = list.toArray(new String[0]);
         String[] test = {"Вишня", "1", "Боб", "3", "Яблоко", "22", "0", "Арбуз"};
         sort(test);
-
+        String s = "Тест";
+        s.hashCode();
         for (String x : test) {
             System.out.println(x);
         }
@@ -91,5 +92,7 @@ public class Better {
         }
         return true;
     }
+
 }
+
 
