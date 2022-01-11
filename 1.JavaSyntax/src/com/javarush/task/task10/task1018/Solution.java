@@ -9,13 +9,14 @@ import java.util.Map;
 /* 
 Поправочки нужны
 */
-
+// ошибка была в HashMap<int, String> map Должен быть Integer
 public class Solution {
     HashMap<Integer, String> map;
     static Integer index;
     static String name;
 
     public Solution() {
+
         this.map = new HashMap<Integer, String>();
     }
 
