@@ -13,8 +13,8 @@ public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
         solution.A = 5;
-        solution.B = 5 * B;
-        solution.C = 5 * C * D;
+        solution.B = 5 * B; // второй раз обращение идет не через объект, а из статического метода
+        solution.C = 5 * C * D; //второй раз обращение к C идет не через объект, а из статического метода
         Solution.D = 5 * D * C;
 
         Solution.D = 5;
