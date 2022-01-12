@@ -16,6 +16,7 @@ public class Solution {
         if (inputArray == null || inputArray.length == 0) {
             return new Pair<Integer, Integer>(null, null);
         }
+        //можно просто отсортировать массив и передать первый и заключительный элементы в Pair
         int min = inputArray[0];
         int max = inputArray[0];
         for (int i = 0; i < inputArray.length-1; i++) {

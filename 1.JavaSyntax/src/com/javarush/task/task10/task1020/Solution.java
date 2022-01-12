@@ -19,7 +19,9 @@ public class Solution {
         }
 
         sort(array);
-
+        //кружок это показывает куда я смотрю, отключается
+        // в Alt+ Tab можно выбирать приложение взглядом.
+        // в проводнике Edge можно выбирать страницу через Alt+Tab взглядом.
         System.out.println(array[9]);
         System.out.println(array[10]);
     }
@@ -28,3 +30,4 @@ public class Solution {
         Arrays.sort(array);
     }
 }
+

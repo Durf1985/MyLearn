@@ -21,17 +21,18 @@ public class Solution {
     }
 
     public static void main(String[] args) throws IOException {
-        Solution solution = new Solution();
+        Solution solution = new Solution(); // создается Solution чтобы через конструктор
+        //проинициализировать HashMap<>
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         for (int i = 0; i < 10; i++) {
             int index = Integer.parseInt(reader.readLine());
             String name = reader.readLine();
-            solution.map.put(index, name);
+            solution.map.put(index, name); // данный индекс и имя это переменные объекта
         }
 
         for (Map.Entry<Integer, String> pair : solution.map.entrySet()) {
-            index = pair.getKey();
+            index = pair.getKey();// данный индекс и имя переменные класса
             name = pair.getValue();
             System.out.println("Id=" + index + " Name=" + name);
         }
