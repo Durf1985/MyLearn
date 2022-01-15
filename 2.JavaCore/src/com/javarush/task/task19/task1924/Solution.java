@@ -40,7 +40,8 @@ public class Solution {
             for (Map.Entry<Integer, String> pair :
                     map.entrySet()) {
                 String regex = String.valueOf(pair.getKey());
-                form = form.replaceAll("\\b" + regex + "\\b", pair.getValue());
+//                form = form.replaceAll("\\b" + regex + "\\b", pair.getValue());
+                form = form.replaceAll("\\b(\\d+)\\b", pair.getValue());
             }
             System.out.println(form);
         }

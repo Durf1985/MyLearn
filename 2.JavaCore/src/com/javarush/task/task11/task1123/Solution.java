@@ -17,6 +17,8 @@ public class Solution {
             return new Pair<Integer, Integer>(null, null);
         }
         //можно просто отсортировать массив и передать первый и заключительный элементы в Pair
+        // по условию задачи массив изменять нельзя, поэтому нужно создать его копию и
+        // производить манипуляции на копии
         int min = inputArray[0];
         int max = inputArray[0];
         for (int i = 0; i < inputArray.length-1; i++) {

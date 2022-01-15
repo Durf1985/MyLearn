@@ -23,6 +23,7 @@ public class Solution {
         } else if (o instanceof Lamp) {
             System.out.println("Лампа");
         }
+
     }
 
     public static class Cat {
