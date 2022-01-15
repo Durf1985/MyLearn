@@ -28,11 +28,13 @@ public class Solution {
         }
 
         return new Pair<Integer, Integer>(min, index);
+//        return new Pair<Integer, Integer, String>(min, index);
     }
 
 
-    public static class Pair<X, Y> {
-        public X x;
+//    public static class Pair<X, Y, Z> {
+    public static class Pair<X, Y> { //просто создаем свой набор переменных в дженерике
+        public X x;// запись аналогична Solution solution = new Solution().
         public Y y;
 
         public Pair(X x, Y y) {
