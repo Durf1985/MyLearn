@@ -6,11 +6,11 @@ package com.javarush.task.task13.task1312;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        Translator translator = new Translator();
+        Translator translator = new Translator();// изначально абстрактный класс
         System.out.println(translator.translate());
     }
 
-    public  static class Translator {
+    public static class Translator {
         public String translate() {
             return "Я переводчик с английского";
         }
