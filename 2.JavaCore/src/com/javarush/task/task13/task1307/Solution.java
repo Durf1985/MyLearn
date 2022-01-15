@@ -6,9 +6,10 @@ package com.javarush.task.task13.task1307;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
+
     }
 
-    interface SimpleObject<T> {
+    interface SimpleObject<T> { // наверно Map <x,y> так же меняется в HashMap на <Key,Value>
         SimpleObject<T> getInstance();
     }
 

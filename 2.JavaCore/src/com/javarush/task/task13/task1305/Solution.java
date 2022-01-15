@@ -8,8 +8,8 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        System.out.println(Dream.HOBBY.toString());
-        System.out.println(new Hobby().toString());
+        System.out.println(Dream.HOBBY.toString());// обращение к полю интерфейса, в котором создается объект и вызов метода
+        System.out.println(new Hobby().toString());// динамичное создание объекта и вызов метода
 
     }
 
@@ -21,11 +21,11 @@ public class Solution {
     }
 
     static class Hobby implements Dream, Desire {
-        static int INDEX = 1;
+        static int INDEX = 1; // то поле общее
 
         @Override
         public String toString() {
-            INDEX++;
+            INDEX++; // увеличивается при каждом вызове этого метода
             return "" + INDEX;
         }
     }
