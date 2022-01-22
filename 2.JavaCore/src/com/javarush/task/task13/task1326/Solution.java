@@ -13,6 +13,11 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         FileInputStream fis = new FileInputStream(reader.readLine());
         ArrayList<Integer> list = new ArrayList<>();
+        // такая сложность из-за того что fis не читает всей строкой, а читает только по 1 символу
+        // следовательно нужно прочитать строку по-символьно, склеить в билдере, найти у нее
+        // перевод строки или перевод каретки, выйти из цикла чтения, преобразовать билдер в
+        // строчку после этого проверить что это не пустая строка и парсировать ее в int с занесением в
+        // массив, если бы строка читалась сразу, то такой сложности не потребовалось бы.
         while (fis.available() > 0) {
             StringBuilder a = new StringBuilder();
             while (fis.available() > 0) {
