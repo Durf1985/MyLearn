@@ -8,7 +8,6 @@ public class Solution {
     public static void main(String[] args) {
         Food food = new Food();
         Selectable selectable = new Food();
-        Food newFood = (Food) selectable;
 
         foodMethods(food);
         selectableMethods(selectable);

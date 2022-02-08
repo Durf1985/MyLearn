@@ -16,6 +16,10 @@ public class Solution {
         } else if (bridge instanceof SuspensionBridge) {
             System.out.println(bridge.getCarsCount());
         }
+        // не понимаю зачем я писал так, код ниже делает то же самое.
+        // у нас нет задачи делать приведение типов, поэтому проверка instanceof лишняя
+
+//        System.out.println(bridge.getCarsCount());
     }
 }
 
