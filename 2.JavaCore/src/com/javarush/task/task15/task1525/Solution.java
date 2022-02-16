@@ -12,22 +12,35 @@ public class Solution {
     public static List<String> lines = new ArrayList<String>();
 
     static {
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(Statics.FILE_NAME));
-            StringBuilder sb = new StringBuilder();
-            String line = br.readLine();
-            while (line != null) {
-                lines.add(sb.append(line).toString());
-                sb = new StringBuilder();
-                line = br.readLine();
-
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(Statics.FILE_NAME))) {
+            while (bufferedReader.ready()) {
+                String read = bufferedReader.readLine();
+                lines.add(read);
             }
-            br.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
+//    static {
+//        try {
+//            BufferedReader br = new BufferedReader(new FileReader(Statics.FILE_NAME));
+//            StringBuilder sb = new StringBuilder();
+//            String line = br.readLine();
+//            while (line != null) {
+//                lines.add(sb.append(line).toString());
+//                sb = new StringBuilder();
+//                line = br.readLine();
+//
+//            }
+//            br.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+
+//    }
 
     public static void main(String[] args) {
         System.out.println(lines);

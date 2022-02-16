@@ -18,10 +18,10 @@ public class LatteMaker extends DrinkMaker {
         System.out.println("Заливаем молоком с пенкой");
     }
 
-    public void makeDrink() {
-        getRightCup();
-        putIngredient();
-        pour();
-    }
+//    public void makeDrink() {
+//        getRightCup();
+//        putIngredient();
+//        pour();
+//    }
 
 }

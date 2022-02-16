@@ -5,9 +5,17 @@ package com.javarush.task.task14.task1416;
 */
 
 public class Solution {
+    interface Walkable {
+        void walk();
+
+    }
+    interface Swimmable {
+        void swim();
+    }
+
     public static void main(String[] args) {
-        Swimmable animal = new Orca();
-        animal.swim();
+        Swimmable animal = new Orca();// потому что родитель имплементирует интерфейс Swimmable
+        animal.swim();// вызов метода родителя
         animal = new Whale();
         animal.swim();
         animal = new Otter();
@@ -16,14 +24,6 @@ public class Solution {
 
     public static void test(Swimmable animal) {
         animal.swim();
-    }
-
-    interface Walkable {
-        void walk();
-    }
-
-    interface Swimmable {
-        void swim();
     }
 
     static abstract class OceanAnimal implements Swimmable {

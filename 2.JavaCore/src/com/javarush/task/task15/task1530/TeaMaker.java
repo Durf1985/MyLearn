@@ -16,10 +16,10 @@ public class TeaMaker extends DrinkMaker {
         System.out.println("Заливаем кипятком");
     }
 
-    public void makeDrink() {
-        getRightCup();
-        putIngredient();
-        pour();
-    }
+//    public void makeDrink() {
+//        getRightCup();
+//        putIngredient();
+//        pour();
+//    }
 
 }

@@ -39,8 +39,8 @@ public class Solution {
     }
 
     public static void doWork(Person person) {
-        if (person instanceof Person.User) {
-            ((Person.User) person).live();
+        if (person instanceof Person.User) {// обращение сначала к интерфейсу, потом к классу
+            ((Person.User) person).live();// можно сделать статический импорт и не писать обращение к интерфейсу
         } else if (person instanceof Person.Loser) {
             ((Person.Loser) person).doNothing();
         } else if (person instanceof Person.Coder) {

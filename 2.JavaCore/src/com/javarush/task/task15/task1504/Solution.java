@@ -29,7 +29,6 @@ public class Solution {
         private String getOutputByBookType() {
             String agathaChristieOutput = author + ": " + getBook().getTitle() + " is a detective";
             String markTwainOutput = getBook().getTitle() + " was written by " + author;
-
             String output = "output";
             if (getBook() instanceof MarkTwainBook) {
                 output = markTwainOutput;
